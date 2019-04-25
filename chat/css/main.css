@@ -1,0 +1,82 @@
+body{
+	background:rgba(236, 238, 242, 0.08);
+}
+#informer{
+	position:absolute;
+	background:white;
+	z-index:150;
+}
+#chatbox{
+	position:relative;
+    height: 100%;
+}
+#dialog_box{ 
+	position:relative;
+	height:100%;
+	width:100%;
+	display: flex;
+    flex-direction: column;
+	background-color:#4F6289;
+}
+.chatfull{
+    width: 100%;
+    flex: 1;
+    overflow-y: scroll;
+	position: relative;
+}
+.send_msg{
+	position: relative;
+    width: 100%;
+    bottom: 0;
+    padding: 5px;
+	background: rgba(150,150,150,0.3);
+}
+#chat_input{
+	min-height:39px;
+	max-height:87px;
+	overflow-y:auto; 
+	width:80%;
+	background:#FFF; 
+	margin:0 auto;
+	border:1px solid rgba(100,100,100,0.3);
+}
+
+
+#send_button:focus{border:0;}
+#send_button{
+    height: 30px;
+    width: 30px;
+    background-size: cover;
+    border: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+.msg_card_body{
+			overflow-y: auto;
+		}
+.msg_cotainer_send{
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-right: 10px;
+	border-radius: 25px;
+	background-color: #78e08f;
+	padding: 10px;
+	position: relative;
+	min-width:200px;
+}
+.msg_time{
+	position: absolute;
+	left: 0;
+	bottom: -15px;
+	color: rgba(255,255,255,0.5);
+	font-size: 10px;
+}
+.msg_time_send{
+	position: absolute;
+	right:0;
+	bottom: -15px;
+	color: rgba(255,255,255,0.5);
+	font-size: 10px;
+}
